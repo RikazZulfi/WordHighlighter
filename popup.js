@@ -11,7 +11,7 @@ document.getElementById('addWord').addEventListener('click', () => {
       words.push({ word, color });
       chrome.storage.sync.set({ words }, () => {
         wordInput.value = '';
-        colorInput.value = '#000000';
+        colorInput.value = '#FFFF00';
         displayWords();
       });
     });
